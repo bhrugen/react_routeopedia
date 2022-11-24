@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import React from "react";
 
 function Product() {
@@ -14,6 +14,9 @@ function Product() {
       >
         Add Product{" "}
       </button>
+      <Link to={`/product/details/5`}>
+        <button>Navigate to Product Detail - 5</button>
+      </Link>
     </div>
   );
 }
